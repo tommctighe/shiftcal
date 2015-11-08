@@ -1,3 +1,25 @@
+## Shiftcal setup
+
+* Clone the repository into a folder
+* Copy `.env.example` to `.env` and edit database credentials
+* Run `php artisan serve`
+* Go to `/calendar`
+
+Files you care about:
+
+* `app/Http/routes.php` - Defines the mapping of urls to Controllers
+* `app/Http/Controllers/CalendarController.php` - Simple example of a controller
+* `app/Models/Event.php` - The event data source
+* `resources/views/calendar/all.php` - The view for the calendar
+
+### TODO:
+
+* Filter events by date
+* Create templates for calendar components
+* Create template for event details
+* Create form submission pages
+* Slim down folders and remove unnecessary files
+
 ## Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)

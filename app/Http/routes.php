@@ -14,3 +14,6 @@
 $app->get('/', function () use ($app) {
     return $app->welcome();
 });
+
+$app->get('/calendar', 'CalendarController@showDefaultCalendar');
+$app->get('/calendar/{start}/{end}', 'CalendarController@showCalendar');
