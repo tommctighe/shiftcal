@@ -15,5 +15,12 @@ $app->get('/', function () use ($app) {
     return $app->welcome();
 });
 
+//calendar list
 $app->get('/calendar', 'CalendarController@showDefaultCalendar');
-$app->get('/calendar/{start}/{end}', 'CalendarController@showCalendar');
+$app->get('/calendar/{start}/{range}', 'CalendarController@showCalendar');
+
+//event detail
+$app->get('/event/{id}', 'EventController@showEvent');
+
+//form
+$app->get('/add-event/', 'FormController@showForm');

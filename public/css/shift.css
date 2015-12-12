@@ -1,0 +1,125 @@
+	/* styles for the shift calendar */
+
+	/* top nav */
+	dt {margin-top: 5px; font-weight: bold; clear: left; }   /* rename */
+  	dd {margin-bottom: 10px; margin-left: 50px; }            /* rename */
+
+	.navbar-brand > img {
+	    width: 100px !important;
+	}
+		
+	#fun-heading {     
+		display: none;
+	}
+	   
+	#pdx-heading {
+		display: none;
+	}
+
+	/* calendar */
+	.pagination-month {
+		width: 250px;	        
+		margin-top: 2em;
+		margin-bottom: 2em;
+		background: #fff;   
+	} 
+	
+	.calendar-list {
+	  color: #000000;
+	  max-width: 500px;
+	  margin: auto;
+	  padding-left: .6em;
+	  padding-right: .6em;	  
+
+	}
+
+	.event-title {
+		margin-top: 1em;
+		margin-bottom: 0em;
+	}
+
+	/* add event button container */
+	.add-event {
+		text-align: center;	
+		margin-top: .6em; 
+		padding-right: 19px;  
+	}
+
+	/* form content */
+	.form-container {
+	  max-width: 550px;
+	  padding-top: 2em;
+	  margin: auto;
+	  padding-left: .6em;
+	  padding-right: .6em;	  
+	}
+	
+	div.form-group {
+		margin-left: 0 !important;
+		margin-right: 0 !important;	
+	}
+
+	/* event content */
+	.event-detail {
+	  max-width: 500px;
+	  margin: auto;
+	}
+
+	.event-detail h2 {
+		margin-bottom: 0;	
+	}
+
+	.event-detail p {
+		max-width: 400px;	
+	}
+
+	/* footer */
+	#footer {
+	  padding-top: 2em;
+	  max-width: 500px;
+	  margin: auto;
+	
+	}
+	.copyright {font-size: .6em;}	
+		   
+@media (min-width: 768px){
+	/* add event button container */
+	.add-event {
+		text-align: right;	
+		margin-top: .6em; 
+		padding-right: 19px;  
+	}
+
+}
+	
+@media (min-width: 992px) {	
+	.navbar-brand > img {
+		width: 152px !important;
+		display: block;
+		margin-top: -3.5em;
+	}
+	#fun-heading {
+		color: purple;  /* E97E25 ffcc00  FFA458 */
+		font-size: .9em;  /* 14pt */
+		letter-spacing: -.5pt;  /* -1pt */
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: normal; /* bold */
+		display: block;
+		margin-left: 14em;
+		padding-top: 2em;
+		padding-bottom: 0;
+		margin-bottom: .3em;
+		margin-right: .5em;
+	}
+		
+	#pdx-heading {
+		color: purple;   /* E97E25 cc6600 */
+		font-size: 12pt;  /* 22pt */
+		letter-spacing: -1.75pt;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		display:block;
+		margin-left: 11em;
+		margin-top: 1em;    /* -.55em */
+	}
+}
