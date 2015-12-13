@@ -15,6 +15,8 @@ Dotenv::load(__DIR__.'/../');
 |
 */
 
+class_alias('Illuminate\Support\Facades\URL', 'URL'); //Tom added so we can say "URL::asset('css/shift.css')"
+
 $app = new Laravel\Lumen\Application(
     realpath(__DIR__.'/../')
 );
@@ -55,12 +57,12 @@ $app->singleton(
 */
 
 // $app->middleware([
-//     // Illuminate\Cookie\Middleware\EncryptCookies::class,
-//     // Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
-//     // Illuminate\Session\Middleware\StartSession::class,
-//     // Illuminate\View\Middleware\ShareErrorsFromSession::class,
-//     // Laravel\Lumen\Http\Middleware\VerifyCsrfToken::class,
-// ]);
+//      Illuminate\Cookie\Middleware\EncryptCookies::class,
+//      Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+ //     Illuminate\Session\Middleware\StartSession::class,
+ //     Illuminate\View\Middleware\ShareErrorsFromSession::class,
+ //     Laravel\Lumen\Http\Middleware\VerifyCsrfToken::class
+ //]);
 
 // $app->routeMiddleware([
 
